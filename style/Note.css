@@ -1,0 +1,145 @@
+/* Property */
+*{
+    /* font-weight : ធ្វើអោយអក្សរដិត */
+    font-weight: bolder;
+
+    /* font-style : ធ្វើអោយអក្សរជាកោង,ទ្រេត */
+    font-style: italic;
+
+    /* text-decoration : ធ្វើអោយអក្សរមានខ្សែបន្ទាត់ក្រោម */
+    text-decoration: underline;
+
+    /* text-decoration :​ដកបន្ទាត់ចេញពីក្រោមអក្សរ  */
+    text-decoration: none;
+
+    /* text-transform : ធ្វើអោយអក្សរដើមជាអក្សរធំ */
+    text-transform: capitalize;
+
+    /* letter-spacing : ធ្វើអោយមានចន្លោះរវាងអក្សរ */
+    letter-spacing: 10px;
+
+    /* line-height : ធ្វើអោយមានចន្លោះរវាងបន្ទាត់អក្សរ */
+    line-height: 1.5;
+
+    /* list-style-type : ធ្វើអោយមានប្រភេទទម្រង់បញ្ជី ឬដកសញ្ញាចុចចេញ */
+    list-style-type: none;
+}
+
+/* Box Model */
+*{
+    /* box-sizing : កំណត់ទំហំអាចរាប់​ padding/border ឬទេ */
+    box-sizing: border-box;
+
+    /* padding : កំណត់ចន្លោះពីមាតិកាខាងក្នុងទៅកាន់ប្រអប់ */
+    padding: 20px;
+
+    /* margin : កំណត់ចន្លោះពីប្រអប់ទៅកាន់មាតិកាខាងក្រៅ */
+    margin: 20px;
+
+    /* overflow : ធ្វើអោយមាតិកាខាងក្នុងមិនលេចចេញពីប្រអប់,ប្រើសម្រាប់កាត់ content ដែលចេញក្រៅមេ */
+    overflow: hidden;
+
+    /* outline-color : កំណត់ពណ៌សម្រាប់ outline របស់Box such as Input, submit...*/
+    outline-color: red;
+}
+
+/* Background */
+*{
+    /* background-size : ធ្វើអោយទំហំរបស់គំរូប៉ុននឹងជាមួយរបស់ផ្ទាំង */
+    background-size: cover;
+    /* background-repeat : ធ្វើអោយគំរូប៉ុនដូចជាមួយរបស់ផ្ទាំង */
+    background-repeat: no-repeat;
+}
+
+/* Position */
+*{
+    /* position : កំណត់ប្រភេទទីតាំង និងកំណត់ទីតាំង*/
+    position: sticky;
+
+    /* z-index : កំណត់លំដាប់ស្រទាប់, កំណត់ទីតាំងឬជាន់ */
+    z-index: 1;
+
+    /* transform : បម្លែងទ្រង់ទ្រាយឆ្វេង ស្ដាំ លើក្រោម */
+    transform: translate(-50%, -50%);
+    /* left, right, top, bottom : កំណត់ទីតាំង*/
+
+}
+
+/* Pseudo */
+*{
+    /* transition : បន្ថយពេលវេលាក្នុងការផ្លាស់ប្តូរម៉ូដ */
+    transition: all 0.5s ease-in-out;
+
+    /* hover : កំណត់ម៉ូដពេលយកមៅស៍ទៅលើធាតុ */
+    &:hover{
+        background-color: blue;
+    }
+
+    /* focus : កំណត់ម៉ូដពេលធាតុបានជ្រើស */
+    &:focus{
+        background-color: red;
+    }
+
+    /* active : កំណត់ម៉ូដពេលធាតុបានចុច */
+    &:active{
+        background-color: green;
+    }
+
+    /* visited : កំណត់ម៉ូដពេលធាតុបានចូល */
+    &:visited{
+        color: gray;
+    }
+
+    /* selected : កំណត់ម៉ូដពេលធាតុបានជ្រើស */
+    &:selected{
+        background-color: yellow;
+    }
+}
+
+/* animation */
+*{
+    /* animation-name : កំណត់ឈ្មោះសម្រាប់ animation */
+    animation-name: example;
+    /* animation-duration : កំណត់រយៈពេលសម្រាប់ animation */
+    animation-duration: 4s;
+    /* animation-timing-function : កំណត់រយៈពេលសម្រាប់ animation */
+    animation-timing-function: ease-in-out;
+    /* animation-delay : កំណត់រយៈពេលសម្រាប់ animation */
+    animation-delay: 3s;
+    /* animation-iteration-count : កំណត់រយៈពេលសម្រាប់ animation */
+    animation-iteration-count: infinite;
+    /* animation-direction : កំណត់រយៈពេលសម្រាប់ animation */
+    animation-direction: alternate;
+   /* @keyframes: កំណត់ animation */
+    @keyframes identifier {
+        transform: translateX(100px);
+    }
+}
+
+/* Flexbox */
+*{
+    /* align-items : កំណត់ទីតាំងតាមដងអ័ក្សឈរ y*/
+    align-items: center;
+
+    /* justify-content : កំណត់ទីតាំងតាមដងអ័ក្សផ្ដេក x*/
+    justify-content: center;
+
+    /* display : កំណត់ប្រភេទទីតាំង */
+    display: flex;
+    
+}
+
+/* Grid */
+*{
+    /* grid-template-columns : កំណត់ជួរឈរនៃ grid */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* grid-template-rows : កំណត់ជួរដេកនៃ grid */
+    grid-template-rows: auto auto;
+
+    /* gap : កំណត់ចន្លោះរវាងធាតុក្នុង grid */
+    gap: 10px;
+
+    /* grid-area : កំណត់ទីតាំងធាតុក្នុង grid */
+    grid-area: header;  
+}

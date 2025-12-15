@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Krasar, "Khmer OS System", "Khmer OS";
+}
+main > .main-card-title{
+    width: 100%;
+    padding: 50px 185px;
+    background-color: #1b2232;
+    box-shadow: 0px 0px 10px black;
+}
+main > .main-card-title > .title{
+    width: 100%;
+    padding: 30px 15px;
+    background-color: #17293e;
+    line-height: 1.9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+main > .main-card-title > .title > h1{
+    color: #CEA939;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+main > .main-card-title > .title > p{
+    color: white;
+    margin-bottom: 5px;
+}
+main > .main-card-title > .title > a{
+    color: rgb(48, 123, 227);
+    text-decoration: none;
+    margin-left: 980px;
+}
+main > .main-card-title > .title > a:hover{
+    color: gray;
+}
+
+
+                               /* card🍎 */
+main > .main-card-title > .main-card{
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+}
+main > .main-card-title > .main-card > .card{
+    border-radius: 10px;
+    width: 290px;
+    height: 350px;
+    overflow: hidden;
+    cursor: pointer;
+    flex: 0 0 auto;     
+}
+main > .main-card-title > .main-card > .card > .card-header{
+    width: 100%;
+    height: 60%;
+}
+main > .main-card-title > .main-card > .card > .card-header > img{
+    width: 100%;
+    height: 100%;   
+}
+main > .main-card-title > .main-card > .card > .card-body{
+    width: 100%;
+    height: 40%;
+    background-color: #ced4da;
+    padding: 8px 20px;
+}
+main > .main-card-title > .main-card > .card > .card-body > a{
+    text-decoration: none;
+    color: rgb(18, 128, 239);
+    font-size: 15px;
+}
+main > .main-card-title > .main-card > .card:hover > .card-body > a{
+    text-decoration: underline;
+    color: white;
+}
+                                    /* poster 🍎*/
+main > .main-card-title > .main-poster{
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+main > .main-card-title > .main-poster > .link-poster{
+    width: 46%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+main > .main-card-title > .main-poster > .link-poster > .poster{
+    width: 100%;
+    height: 93%;   
+    overflow: hidden;
+    border-radius: 10px;
+}
+main > .main-card-title > .main-poster > .link-poster > .poster > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main > .main-card-title > .main-poster > .link-poster > a{
+    font-size: 15px;
+    color: #06C;
+    text-decoration: none;
+}
+main > .main-card-title > .main-poster > .link-poster > a:hover{
+    text-decoration: underline;
+    color: white;
+}
